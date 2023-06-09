@@ -1,8 +1,8 @@
 import React from 'react'
 import image1 from "../Assets/image1.svg"
-import image2 from "../Assets/image2.svg"
-import image3 from "../Assets/image3.svg"
-import image4 from "../Assets/image4.svg"
+import image2 from "../Assets/image2.png"
+import image3 from "../Assets/image3.png"
+import image4 from "../Assets/image4.png"
 import service from "../Assets/service.svg"
 import team from "../Assets/team.svg"
 import blog from "../Assets/blog.svg"
@@ -13,6 +13,7 @@ import tiktok from "../Assets/tiktok.svg"
 import ytube from "../Assets/youtube.svg"
 import snap from "../Assets/snap.svg"
 import tick from "../Assets/tick.svg"
+import end_logo from "../Assets/end_logo_1.svg"
 import "./styles.scss"
 import Testimonial from './testimonial'
 import Book from './book'
@@ -66,7 +67,9 @@ export default function Main() {
 
             <div className='section4'>
                 <p>Streamline your Content Creation Process</p>
-                <div className='image' style={{ backgroundImage: `url(${image3})` }} />
+                <div className='image'>
+                    <img src={image3} />
+                </div>
                 <p>Dedicated team of experienced content creators.</p><br />
                 <p>Customized Content for Reels, Explainers, Scoops, Soaps, and Comedy.</p><br />
                 <p>Keep Customers on the edge, craving for more.</p><br />
@@ -74,7 +77,9 @@ export default function Main() {
 
             <div className='section3'>
                 <p>Evoke Strong Emotions and Create Experience</p>
-                <div className='image' style={{ backgroundImage: `url(${image4})` }} />
+                <div className='image'>
+                    <img src={image4} />
+                </div>
                 <p className='text3'>Stunning Visuals that create an emotional impact</p><br />
                 <p >Emotional storytelling that resonates with your audience's desires and aspirations.</p><br />
                 <p>Personalized content that connects on a deeper, emotional level.</p>
@@ -90,71 +95,78 @@ export default function Main() {
 
             <Book />
 
-            <div className='section4'>
+            <div className='section6'>
                 <p className='heading'><span>Grow your brand on</span></p>
-                <div className='flex4'>
-                    <img src={ytube} id="yt"/>
+                <div className='flex6'>
+                    <img src={ytube} id="yt" />
                     <img src={fb} id="fb" />
-                    <img src={tiktok} />
-                    <img src={insta} />
+                    <img src={tiktok} id="tt" />
+                    <img src={insta} id="insta" />
                     <img src={snap} id="sc" />
                 </div>
             </div>
 
-            <div className='section4'>
+            <div className='section6'>
                 <p className='heading'><span>Our Clients</span></p>
-                <div className='flex4'>
-                    <img />
-                    <img />
-                    <img />
-                    <img />
-                    <img />
+                <div className='flexLogo'>
+                    <img src={end_logo}/>
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
+                    <img src={end_logo} />
                 </div>
             </div>
 
             <div className='section8'>
                 <p className='heading'><span>Our Features</span></p>
                 <ul>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Reels, Posts, Videos, Posters,
                         Ads, if you can imagine it, we
                         can produce it.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Soaps, Drama’s, Comedy,
                         Challenges, Pranks, Fun and
                         style, content that moves.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Pre-Scheduled Content,
                         Quick Content, News Style
                         Edits, Long-Form as well as
                         short form.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Keep your customers on the
                         edge of their seat, waiting
                         and eager for more.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         We work for appealing to
                         both the human brain as well
                         as the social algorithms, oh
                         and Ai also.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         The future is going to be fun,
                         so get geared up and ready
                         for it with our various content
                         strategies.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Awareness, Consideration,
                         Conversion, Let our content
                         push your customers through
                         the sales funnel.
                     </li>
-                    <li><img src={tick}/>
+                    <li><img src={tick} />
                         Leave your competition in the
                         dust, capture customer
                         attention, capture the market.
@@ -163,9 +175,9 @@ export default function Main() {
             </div>
             <Book />
             <footer>
-                    <p>SITEMAP | PRIVACY POLICY | TERMS OF SERVICE</p>
-                    <p className='call'><a href={`tel${97477757916}`}>Call: +974 777 57 916</a></p>
-                    <img src={logo} />
+                <p>SITEMAP | PRIVACY POLICY | TERMS OF SERVICE</p>
+                <p className='call'><a href={`tel${97477757916}`}>Call: +974 777 57 916</a></p>
+                <img src={logo} />
             </footer>
         </div>
     </>

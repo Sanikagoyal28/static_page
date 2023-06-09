@@ -46,7 +46,7 @@ $bg_color : #663399;
 
     .logo {
         // height: 56px;
-        width: 12vw;
+        width: 170px;
         background: none
     }
 }
@@ -120,6 +120,7 @@ $bg_color : #663399;
 
 .section3 {
     padding: 16px 2vw;
+    padding-bottom: 32px;
 
     p {
         color: #fff;
@@ -138,6 +139,7 @@ $bg_color : #663399;
 
 .section4 {
     padding: 16px 2vw;
+    padding-bottom: 32px;
 
     p {
         @include text(1.4rem, 500);
@@ -145,27 +147,6 @@ $bg_color : #663399;
     }
 
     background-color: #fff;
-
-    .flex4 {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 80vw;
-        margin: auto;
-
-        #yt {
-            width:12vw;
-        }
-
-        #fb{
-            width:6.8vw;
-        }
-
-        #sc{
-            width:6vw;
-        }
-    }
 }
 
 .section5 {
@@ -178,6 +159,54 @@ $bg_color : #663399;
     }
 }
 
+.section6 {
+    padding: 16px 2vw;
+    padding-bottom: 32px;
+    background-color: #fff;
+
+    .flex6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80vw;
+        margin: auto;
+
+        #yt {
+            width: 11.4vw;
+        }
+
+        #fb {
+            width: 6.4vw;
+        }
+
+        #sc {
+            width: 6vw;
+        }
+
+        #tt {
+            width: 10vw;
+        }
+
+        #insta {
+            width: 7.2vw;
+        }
+    }
+
+    .flexLogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 12vw;
+            margin: 0 4vw;
+        }
+    }
+}
+
 .section8 {
     padding: 16px 2vw;
 
@@ -187,19 +216,32 @@ $bg_color : #663399;
         li {
             @include text(1.2rem, 500);
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
 
             img {
                 display: inline;
                 margin: 4px;
+                margin-right: 1vw;
             }
         }
     }
 }
 
 .image {
+    background: none;
+    margin: 0 -2vw;
+
+    img {
+        background: none;
+        width: 100vw;
+        // height: 800px;
+        margin: 16px -2vw;
+    }
+
     @include image;
-    height: 800px;
-    margin: 16px -2vw;
+
     text-align: center;
 }
 
@@ -226,7 +268,7 @@ $bg_color : #663399;
 }
 
 .book {
-    padding: 16px 2vw;
+    padding: 8px 4vw;
     background-color: $bg_color;
     display: flex;
     justify-content: space-between;
@@ -236,7 +278,7 @@ $bg_color : #663399;
     }
 
     .computer {
-        width: 150px;
+        width: 14vw;
         // height:80px;
         background-color: $bg_color;
     }
@@ -246,15 +288,10 @@ $bg_color : #663399;
         border: 8px solid orangered;
         border-radius: 8px;
         padding: 16px;
-        width: 50vw;
+        width: 76vw;
         background: none;
         background-color: #fff;
         margin-bottom: 8px;
-    }
-
-    p {
-        @include text(1.2rem, 500);
-        background: none;
     }
 
     p span {
@@ -262,8 +299,28 @@ $bg_color : #663399;
         background: none;
     }
 
-    .stars {
+    .starFlex {
         background: none;
+        display: flex;
+        width: 70vw;
+        gap: 2vw;
+
+        p {
+            @include text(1.3rem, 400);
+            background: none;
+            color: #fff;
+        }
+    }
+
+    .stars {
+        display: flex;
+        gap: 1vw;
+    }
+
+    .star {
+        background: none;
+        color: #fff;
+        width: 32px;
     }
 }
 
@@ -288,12 +345,188 @@ footer {
         cursor: pointer;
     }
 
-    .call a{
+    .call a {
         text-decoration: none;
         color: #000;
     }
 
     img {
         background: none;
+    }
+}
+
+@media(max-width:1200px) {
+    .section1 .mainText {
+        width: 50vw;
+    }
+}
+
+@media(max-width:1000px) {
+    .section1 .mainText {
+        width: 58vw;
+    }
+}
+
+@media(max-width:800px) {
+    .book {
+        padding-right: 2vw;
+        padding-left: 2vw;
+
+        .computer {
+            width: 16vw;
+        }
+    }
+}
+
+@media(max-width:700px) {
+    .book {
+        .computer {
+            width: 18vw;
+        }
+
+        .bookText {
+            font-size: 1.1rem;
+            padding: 8px;
+        }
+
+        .starFlex {
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:600px) {
+    .section1 {
+        .mainText {
+            width: 70vw;
+        }
+
+        .purpleText {
+            font-size: 1.7rem;
+        }
+    }
+
+    .section3 p,
+    .section4 p {
+        font-size: 1.2rem;
+    }
+
+    .section6 .flex6 {
+        #yt {
+            width: 13.4vw;
+        }
+
+        #fb {
+            width: 8.4vw;
+        }
+
+        #sc {
+            width: 8vw;
+        }
+
+        #tt {
+            width: 12vw;
+        }
+
+        #insta {
+            width: 9.2vw;
+        }
+    }
+
+    .section8 {
+        ul {
+            li img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .book {
+        padding-right: 2vw;
+        padding-left: 2vw;
+
+        .computer {
+            width: 20vw;
+        }
+
+        .star {
+            width: 24px;
+        }
+
+        .starFlex {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .book {
+        padding-right: 2vw;
+        padding-left: 2vw;
+
+        .computer {
+            width: 22vw;
+        }
+
+        .bookText {
+            font-size: 0.9rem;
+            width: 70vw;
+        }
+
+        .starFlex {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .heading {
+        font-size: 1.1rem;
+    }
+
+    .section8 ul li,
+    .section3 p,
+    .section4 p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:450px) {
+    .section1 .mainText {
+        width: 74vw;
+        font-size: 4rem;
+    }
+
+    .navflex1 {
+        .navFlex {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .book {
+        .bookText {
+            font-size: 0.8rem;
+        }
+
+        .starFlex p {
+            font-size: 0.7rem;
+        }
     }
 }

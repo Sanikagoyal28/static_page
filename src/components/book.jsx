@@ -8,13 +8,15 @@ export default function Book() {
             <img src={computer} className="computer" />
             <div>
                 <p className='bookText'><span>Book a free - content strategy session</span></p>
-                <div className='stars'>
+                <div className='starFlex'>
                     <p>100+ Customers served</p>
-                    <img src={star} className="star" />
-                    <img src={star} className="star" />
-                    <img src={star} className="star" />
-                    <img src={star} className="star" />
-                    <img src={star} className="star" />
+                    <div className='stars'>
+                        <img src={star} className="star" />
+                        <img src={star} className="star" />
+                        <img src={star} className="star" />
+                        <img src={star} className="star" />
+                        <img src={star} className="star" />
+                    </div>
                 </div>
             </div>
         </div>
