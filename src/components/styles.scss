@@ -304,6 +304,7 @@ $bg_color : #663399;
         display: flex;
         width: 70vw;
         gap: 2vw;
+        align-items: center;
 
         p {
             @include text(1.3rem, 400);
@@ -522,11 +523,16 @@ footer {
 
     .book {
         .bookText {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
         }
 
         .starFlex p {
-            font-size: 0.7rem;
+            font-size: 0.6rem;
+        }
+
+        .star{
+            width:20px;
+            height:20px;
         }
     }
 }
